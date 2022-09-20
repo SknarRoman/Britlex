@@ -1,0 +1,52 @@
+.start{
+    padding-top: 133px;
+    &__title{
+        position: relative;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 80px;
+        &-icon{
+            position: absolute;
+            top: 0;
+            right: 38px;
+            top: 92px;
+        }
+    }
+    &__descr{
+        margin-top: 45px;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 36px;
+        color: #8F95A5;
+    }
+    &__wrapper{
+        display: flex;
+    }
+    &__info{
+        width: 632px;
+    }
+    &__img{
+        img{
+            width: 661px;
+            height: 661px;
+        }
+    }
+    &__btn{
+        margin-top: 100px;
+        width: 438px;
+        height: 118px;
+        background: $main-color;
+        border-radius: 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 54px;
+        color: #FFFFFF;
+        transition: all 0.6s;
+        &:hover{
+            background: #fff;
+            color:$main-color;
+            border: 1px solid $main-color;
+        }
+    }
+}
