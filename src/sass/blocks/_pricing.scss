@@ -1,0 +1,68 @@
+.pricing{
+    padding-top: 220px;
+    &__title{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 80px;
+        text-align: center;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template: 600px / repeat(3, 375px);
+        column-gap: 40px;
+    }
+    &__subtitle{
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 48px;
+        color: $main-color;
+        &_webinar{
+            margin-top: 11px;
+        }
+    }
+    &__descr{
+        margin-top: 19px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: $gray-color;
+    }
+    &__img{
+        &_lesson{
+            margin-top: 28px;
+        }
+        &_webinar{
+            padding-left: 20px;
+        }
+    }
+    &__cost{
+        margin-top: 29px;
+        display: flex;
+        padding: 0 20px;
+        width: 240px;
+        height: 45px;
+        background: #EEEEEE;
+        border-radius: 5px;
+        align-items: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: #546269;
+        &_lesson{
+            margin-top: 59px;
+        }
+        &_webinar{
+            margin-top: 60px;
+        }
+        
+        span{
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 45px;
+            color: $main-color;
+            margin-right: 15px;
+        }
+
+    }
+}
