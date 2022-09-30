@@ -23,6 +23,8 @@
         display: flex;
     }
     &__info{
+        display: flex;
+        flex-direction: column;
         width: 632px;
     }
     &__img{
@@ -36,7 +38,7 @@
         width: 438px;
         height: 118px;
         background: $main-color;
-        border-radius: 15px;
+        border-radius: 5px;
         font-style: normal;
         font-weight: 400;
         font-size: 36px;

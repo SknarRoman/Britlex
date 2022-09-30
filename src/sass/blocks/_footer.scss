@@ -1,0 +1,20 @@
+.footer{
+    padding: 0 70px;
+    &__hr{
+        width: 100%;
+    }
+    &__wrapper{
+        padding: 31px 0;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    &__link{
+        margin-right: 5px;
+        text-decoration: none;
+        color: $gray-color;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+    }
+}

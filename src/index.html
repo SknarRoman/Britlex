@@ -10,24 +10,30 @@
 </head>
 <body>
     <header>
-        <nav class="promo">
-            <div class="container">
-                <div class="promo__wrapper">
-                    <div class="promo__logo">
-                        <img src="icons/Britlex.png" alt="logo">
+        <div class="container">
+            <nav id="promo"class="promo">
+                    <div class="promo__wrapper">
+                        <div class="promo__logo">
+                            <img src="icons/Britlex.png" alt="logo">
+                        </div>
+                        <ul class="promo__menu">
+                            <li class="promo__menu-item"><a href="">Home</a></li>
+                            <li class="promo__menu-item"><a href="">Skills</a></li>
+                            <li class="promo__menu-item"><a href="">About us</a></li>
+                            <li class="promo__menu-item"><a href="">Pricing</a></li>
+                            <li class="promo__menu-item"><a href="">Contacts</a></li>
+                        </ul>
+                        <button class="promo__btn">Let's talk</button>
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span class="short"></span>
+                        </div>
                     </div>
-                    <ul class="promo__menu">
-                        <li class="promo__menu-item"><a href="">Home</a></li>
-                        <li class="promo__menu-item"><a href="">Skills</a></li>
-                        <li class="promo__menu-item"><a href="">About us</a></li>
-                        <li class="promo__menu-item"><a href="">Pricing</a></li>
-                        <li class="promo__menu-item"><a href="">Contacts</a></li>
-                    </ul>
-                    <button class="promo__btn">Let's talk</button>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
+
     <section class="start">
         <div class="container">
             <div class="start__wrapper">
@@ -135,7 +141,7 @@
         </div>
     </section>
 
-    <section class="pricing">
+     <section class="pricing">
         <div class="container">
             <div class="pricing__title">Pricing</div>
                 <div class="pricing__wrapper">
@@ -169,7 +175,44 @@
                     </div>
                 </div>
         </div>
+    </section> 
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact__wrapper">
+                <div class="contact__picture">
+                    <img src="img/contact.png" alt="" class="contact__img">
+                </div>
+                <div class="contact__content">
+                    <div class="contact__title">Contact Us</div>
+                    <div class="contact__descr">Discover your current English level by taking our free online English test.Sign up to our newsletter for learning tips and free resources</div>
+                    <form action="" class="contact__form">
+                        <input type="email" placeholder="Enter Your E-mail" class="contact__mail">
+                        <button class="contact__button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- <footer class="footer">
+        <div class="container">
+        <hr class="footer__hr">
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <a href="#contact" class="footer__home">
+                    <img src="icons/Britlex.png" alt="logo">
+                </a>
+            </div>
+            <div class="footer__links">
+                <a href="" class="footer__link">Terms and Conditions</a>
+                <a href="" class="footer__link">Privacy Policy</a>
+                <a href="" class="footer__link">Cookie Policy</a>
+            </div>
+        </div>
+        </div>
+
+    </footer> -->
     <script src="js/script.js"></script>
 </body>
 </html>
