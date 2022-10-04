@@ -37,8 +37,8 @@
     .about{
         &__img{
             img{
-                min-width: 400px;
-                min-height: 400px;
+                max-width: 400px;
+                max-height: 400px;
             }
         }
         &__wrapper{
@@ -86,7 +86,8 @@
 
 @media (max-width: 992px){
     .container{
-        padding: 0 30px;
+        width: auto;
+        padding: 0 30px 0 31px;
     }
     .promo{
         &__btn{
@@ -131,7 +132,7 @@
         }
         &__descr{
             margin-top: 17px;
-            font-size: 21px;
+            font-size: 18px;
             line-height: 27px;
         }
         &__btn{
@@ -144,7 +145,7 @@
 
     .skills{
         &__grid{
-            grid-template: 531px 343px/repeat(3,275px);
+            grid-template: repeat(2, 543px) / repeat(2, 345px);
             &-btn{
                 width: 185px;
                 height: 50px;
@@ -152,9 +153,36 @@
             }
             &-title{
                 font-size: 24px;
+                &_reading{
+                    margin-top: 0;
+                }
+                &_speaking{
+                    margin-top: 0;
+                }
             }
             &-descr{
-                font-size: 14px;
+                font-size: 12px;
+            }
+            &-img{
+                width: 185px;
+                height: 185px;
+                &_reading{
+                    width: 300px;
+                }
+                &_podcast{
+                    width: 280px;
+                }
+                // &_writing{
+                //     width: 250px;
+                //     height: 250px;
+                // }
+            }
+            .horizontal{
+                grid-column: unset;
+                flex-direction: column;
+            }
+            .vertical{
+                grid-row: unset;
             }
         }
         &__title{
@@ -163,10 +191,10 @@
     }
 
     .about{
-        &__wrapper{
-            grid-template: 400px / 470px 300px;
-            column-gap: 20px;
-        }
+        // &__wrapper{
+        //     grid-template: 400px / 470px 300px;
+        //     column-gap: 20px;
+        // }
         &__title{
             font-size: 36px;
         }
@@ -183,12 +211,13 @@
 
     .pricing{
         &__wrapper{
-            grid-template: 600px/repeat(3,275px);
+            grid-template: 600px/repeat(3, 1fr);
         }
         &__title{
             font-size: 36px;
         }
         &__img{
+            width: 200px;
             img{
                 width: 222px;
             }
@@ -297,20 +326,79 @@
 
     .skills{
         &__grid{
-            gap: 40px;
+            grid-template: repeat(2,543px)/repeat(2,315px);
+            gap: 67px;
         }
     }
 
     .contact{
-        padding: 101px 112px 121px 78px;
+        padding: 0;
+        padding-top: 80px;
         &__wrapper{
-
+            grid-template: 477px/275px 364px;
         }
         &__picture{
             img{
-                max-width: 233px;
+                max-width: 275px;
                 max-height: 210px;
             }
+        }
+        &__descr{
+            font-size: 15px;
+        }
+    }
+
+    .about{
+        &__wrapper{
+            column-gap: 0;
+        }
+        &__img{
+            img{
+                max-width: 295px;
+                max-height: 295px;
+            }
+        }
+        &__title{
+            line-height: 80px;
+        }
+        &__descr{
+            line-height: 26px;
+        }
+        &__user{
+            &-number{
+                line-height: 53px;
+            }
+        }
+    }
+
+    .pricing{
+        &__wrapper{
+            grid-template: 550px/repeat(3,200px);
+            column-gap: 50px
+        }
+        &__cost{
+            width: 200px;
+            font-size: 16px;
+            line-height: 22px;
+            span{
+                font-size: 18px;
+            }
+        }
+        &__subtitle{
+            margin-top: 31px;
+            &_webinar{
+                margin-top: 11px;
+            }
+            &_lesson{
+                margin-top: 19px;
+            }
+        }
+        &__descr{
+            font-size: 16px;
+            line-height: 23px;
+        }
+        &__img{
+            width: 192px;
         }
     }
 }
@@ -320,6 +408,7 @@
         padding: 0 29px 0 30px;
     }
     .start{
+        padding-top: 0;
        &__wrapper{
             flex-direction: column-reverse;
             align-items:center;
@@ -342,6 +431,7 @@
         }
        }
        &__descr{
+        font-size: 17px;
         text-align: center;
        }
     }
@@ -357,30 +447,40 @@
             align-items:center;
         }
         &__grid{
-            grid-template: 650px 650px / 450px;
+            grid-template: repeat(4, 570px)/1fr;
             &-img{
                 width: 100%;
                 height: 230px;
                 object-fit: contain;
+                &_podcast{
+                    height: 161px;
+                }
             }
         &-title{
+            text-align: center;
             &_speaking{
                 margin-top: 0;
             }
         }
         &-btn{
-            &_speaking{
-                margin-top: 20px;
-            }
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &-descr{
+            font-size: 14px;
+            text-align: center;
         }
         }
     }
     
     .about{
+        padding-top: 80px;
         &__wrapper{
-            grid-template: 400px / 367px;
-            gap: 100px;
-            padding: 0 39px 93px 39px;
+            flex-direction: column;
+            column-gap: 0;
+            grid-template: repeat(3, 400px) / 1fr;
+            row-gap: 52px;
+            align-content: center;
         }
         &__img{
             img{
@@ -393,8 +493,9 @@
     .pricing{
         padding-top: 10px;
         &__wrapper{
-            grid-template: 600px / 415px;
+            grid-template: repeat(3, 400px) / 1fr;
             row-gap: 70px;
+            align-content: center;
         }
         &__img{
             display: block;
@@ -407,7 +508,43 @@
             text-align: center;
         }
         &__cost{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .contact{
+        padding: 0;
+        padding-top: 80px ;
+        &__wrapper{
+            grid-template: 281px 400px / 1fr;
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+        }
+        &__mail{
+            margin-bottom: 15px;
+        }
+        &__picture{
+            img{
+                width: 320px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .footer{
+        padding: 20px 0;
+        flex-direction: column;
+        &__img{
+            display: block;
             margin: 0 auto;
+            width: 70px;
+        }
+        &__link{
+            font-size: 8px;
         }
     }
     

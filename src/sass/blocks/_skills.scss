@@ -9,8 +9,7 @@
         margin-top: 96px;
         display: grid;
         grid-template: 531px 343px / repeat(3, 350px);
-        column-gap: 18px;
-        row-gap: 20px;
+        gap: 40px;
         &-item{
             position: relative;
             padding: 0 22px;
@@ -40,7 +39,7 @@
         &-descr{
             margin-top: 3px;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 21px;
             color: #8F95A5;
         }

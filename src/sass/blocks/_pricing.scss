@@ -9,7 +9,7 @@
     &__wrapper{
         padding-top: 83px;
         display: grid;
-        grid-template: 600px / repeat(3, 375px);
+        grid-template: 700px/repeat(3,355px);
         column-gap: 40px;
     }
     &__subtitle{
@@ -24,14 +24,15 @@
     }
     &__descr{
         margin-top: 19px;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 20px;
         line-height: 30px;
         color: $gray-color;
     }
     &__img{
         &_lesson{
-            margin-top: 28px;
+            margin-top: 55px;
+            width: 100%;
         }
         &_webinar{
             padding-left: 20px;
@@ -45,7 +46,7 @@
         bottom: 0;
         margin-top: 29px;
         display: flex;
-        padding: 0 20px;
+        padding: 10px 20px;
         width: 240px;
         height: 45px;
         background: #EEEEEE;

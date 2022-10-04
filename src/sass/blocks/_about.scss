@@ -6,10 +6,8 @@
         line-height: 100px;
     }
     &__wrapper{
-        padding: 0 39px 93px 34px;
-        display: grid;
-        grid-template: 400px / repeat(2, 400px);
-        column-gap: 150px;
+        display: flex;
+        justify-content: space-between;
     }
     &__descr{
         font-weight: 300;
