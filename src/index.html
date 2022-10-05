@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Britlex</title>
     <meta name="title" content="Britlex">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -17,13 +18,13 @@
                             <img src="icons/Britlex.png" alt="logo">
                         </div>
                         <ul class="promo__menu">
-                            <li class="promo__menu-item"><a href="">Home</a></li>
-                            <li class="promo__menu-item"><a href="">Skills</a></li>
-                            <li class="promo__menu-item"><a href="">About us</a></li>
-                            <li class="promo__menu-item"><a href="">Pricing</a></li>
-                            <li class="promo__menu-item"><a href="">Contacts</a></li>
+                            <li class="promo__menu-item"><a href="#start">Home</a></li>
+                            <li class="promo__menu-item"><a href="#skills">Skills</a></li>
+                            <li class="promo__menu-item"><a href="#about">About us</a></li>
+                            <li class="promo__menu-item"><a href="#pricing">Pricing</a></li>
+                            <li class="promo__menu-item"><a href="#contact">Contacts</a></li>
                         </ul>
-                        <button class="promo__btn">Let's talk</button>
+                        <button data-modal class="promo__btn">Let's talk</button>
                         <div class="hamburger">
                             <span></span>
                             <span></span>
@@ -34,7 +35,7 @@
         </div>
     </header>
 
-    <section class="start">
+    <section id='start' class="start">
         <div class="container">
             <div class="start__wrapper">
                 <div class="start__info">
@@ -56,7 +57,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section id="skills animate__backInUp" class="skills">
         <div class="container">
             <h2 class="skills__title">Skills</h2>
             <div class="skills__grid">
@@ -104,7 +105,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__content">
@@ -141,7 +142,7 @@
         </div>
     </section>
 
-    <section class="pricing">
+    <section id="pricing" class="pricing">
         <div class="container">
             <div class="pricing__title">Pricing</div>
                 <div class="pricing__wrapper">
@@ -212,7 +213,20 @@
         </div>
         </div>
 
-    </footer> 
+    </footer>
+
+    <div class="overlay hide">
+        <div class="modal">
+            <div data-close class="modal__close">&times;</div>
+            <div class="modal__subtitle">Contact us</div>
+            <div class="modal__descr">And we call you back faster than 10 minutes</div>
+            <div class="divider"></div>
+            <form action="" class="modal__form">
+                <input type="text" class="modal__input">
+                <button class="modal__button">send</button>
+            </form>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>

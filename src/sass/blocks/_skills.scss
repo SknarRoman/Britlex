@@ -10,6 +10,7 @@
         display: grid;
         grid-template: 531px 343px / repeat(3, 350px);
         gap: 40px;
+        animation: animate__backInUp;
         &-item{
             position: relative;
             padding: 0 22px;
